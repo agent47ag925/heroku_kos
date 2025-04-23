@@ -1,1 +1,1 @@
-web: streamlit run main.py --server.port=$PORT --server.address=0.0.0.0
+web: uvicorn fastapp:app --reload --host=0.0.0.0 --port=8001
